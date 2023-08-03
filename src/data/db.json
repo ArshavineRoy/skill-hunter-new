@@ -1,0 +1,124 @@
+{
+  "careers": [
+    {
+      "id": 1,
+      "title": "Senior React Developer",
+      "salary": 5000,
+      "location": "Nairobi",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "title": "Front-end Developer",
+      "salary": 10000,
+      "location": "Mombasa",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 3,
+      "title": "Figma Designer",
+      "salary": 650000,
+      "location": "Nakuru",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 4,
+      "title": "Back-end Developer",
+      "salary": 950000,
+      "location": "Malindi",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 5,
+      "title": "Senior React Developer",
+      "salary": 150000,
+      "location": "Thika",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 6,
+      "title": "Systems Analyst",
+      "salary": 50000,
+      "location": "Nairobi",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 7,
+      "title": "Project Manager",
+      "salary": 50000,
+      "location": "Thika",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 8,
+      "title": "Senior React Developer",
+      "salary": 50000,
+      "location": "Mombasa",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 9,
+      "title": "Nurse",
+      "salary": 50000,
+      "location": "Nairobi",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 10,
+      "title": "Product Manager",
+      "salary": 50000,
+      "location": "Nakuru",
+      "company": "amazon",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "type": "full-time",
+      "experience": 4,
+      "skills": "react, js, html,css",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}
