@@ -177,10 +177,10 @@ function NewJob() {
                       Close
                     </button>
                     <button
-                      type="submit"
-                      class="py-3 ml-10 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+                      type="button"
+                      className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
                     >
-                      Save
+                      <i class="fa-regular fa-bookmark text-lg"></i>
                     </button>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ function NewJob() {
           </div>
           <div className="mt-2">
             <a
-              href="https://stackdiary.com/"
+              href="#"
               className="text-2xl font-bold text-gray-900 "
             >
               Senior Software Engineer
@@ -223,9 +223,9 @@ function NewJob() {
           <div className="flex items-center justify-between mt-4">
             <button
               type="button"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
             >
-              Save
+              <i class="fa-regular fa-bookmark text-lg"></i>
             </button>
             <a
               href="#"
@@ -235,7 +235,7 @@ function NewJob() {
             </a>
             <div className="flex items-center">
               <img
-                src="https://stackdiary.com/140x100.png"
+                src="/company.png"
                 alt="Author Photo"
                 className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
               />

@@ -27,7 +27,7 @@ function RenderJobOnLoad() {
       </div>
       <div className="mt-2">
         <a
-          href="https://stackdiary.com/"
+          href="#"
           className="text-2xl font-bold text-gray-900 "
         >
           Senior Software Engineer
@@ -44,9 +44,9 @@ function RenderJobOnLoad() {
         </button>
         <button
           type="button"
-          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
         >
-          Save
+          <i class="fa-regular fa-bookmark text-lg"></i>
         </button>
         <a
           href="#"
@@ -56,7 +56,7 @@ function RenderJobOnLoad() {
         </a>
         <div className="flex items-center">
           <img
-            src="https://stackdiary.com/140x100.png"
+            src="/company.png"
             alt="Author Photo"
             className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
           />
@@ -65,15 +65,16 @@ function RenderJobOnLoad() {
           </a>
         </div>
       </div>
+
+      {isApply && (
+        <>
+          <Apply toggleApply={toggleApply} />
+        </>
+      )}
       <div className="card mt-4 p-3">
         <h3 className="font-bold mb-3 pt-2">Skills</h3>
         <p className="mb-1">react, js, html, css, scrum</p>
       </div>
-      {isApply && (
-        <>
-          <Apply />
-        </>
-      )}
 
       <div className="card mt-4 p-3">
         <h3 className="font-bold mb-3 pt-2">Job Details</h3>
@@ -87,10 +88,10 @@ function RenderJobOnLoad() {
           best practices. The role involves active participation in an agile
           development environment, effective communication with stakeholders,
           and contributing to application support issue resolutions.
-          Qualifications include
+          Qualifications include a
           {isShowMore && (
             <span>
-              a Bachelor's degree or equivalent experience, critical thinking,
+              Bachelor's degree or equivalent experience, critical thinking,
               problem-solving, and time-management skills. The candidate should
               be a team player with excellent interpersonal and communication
               skills, self-motivated, and have at least 1+ years of experience
