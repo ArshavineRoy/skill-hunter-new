@@ -5,6 +5,12 @@ import { useState } from "react";
 function RenderJobOnLoad() {
   const [isShowMore, setIsShowMore] = useState(false);
 
+  const [isApply, setIsApply] = useState(false);
+
+  const toggleApply = () => {
+    setIsApply(!isApply);
+  };
+
   const toggleReadMoreLess = () => {
     setIsShowMore(!isShowMore);
   };
@@ -30,11 +36,11 @@ function RenderJobOnLoad() {
       </div>
       <div className="flex items-center justify-between mt-4">
         <button
-          onClick={toggleReadMoreLess}
+          onClick={toggleApply}
           type="button"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          {isShowMore ? "Close" : "Apply"}
+          {isApply ? "Close" : "Apply"}
         </button>
         <button
           type="button"
@@ -42,12 +48,6 @@ function RenderJobOnLoad() {
         >
           Save
         </button>
-        {/* <button
-          class="text-blue-600 dark:text-blue-400 hover:underline"
-          onClick={toggleReadMoreLess}
-        >
-          {isShowMore ? "Read Less" : "Read More"}
-        </button> */}
         <a
           href="#"
           className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -65,13 +65,19 @@ function RenderJobOnLoad() {
           </a>
         </div>
       </div>
-      {isShowMore && (
+      <div className="card mt-4 p-3">
+        <h3 className="font-bold mb-3 pt-2">Skills</h3>
+        <p className="mb-1">react, js, html, css, scrum</p>
+      </div>
+      {isApply && (
         <>
           <Apply />
         </>
       )}
-      <div className="max-w-2xl px-8 mt-4 text-left py-4 mx-auto">
-        <p>
+
+      <div className="card mt-4 p-3">
+        <h3 className="font-bold mb-3 pt-2">Job Details</h3>
+        <p className="mb-6">
           The company is seeking a Software Engineer with expertise in Guidewire
           GOSU to join their cross-functional team in the E&S insurance segment.
           The engineer will collaborate with various teams to enhance and
@@ -81,18 +87,29 @@ function RenderJobOnLoad() {
           best practices. The role involves active participation in an agile
           development environment, effective communication with stakeholders,
           and contributing to application support issue resolutions.
-          Qualifications include a Bachelor's degree or equivalent experience,
-          critical thinking, problem-solving, and time-management skills. The
-          candidate should be a team player with excellent interpersonal and
-          communication skills, self-motivated, and have at least 1+ years of
-          experience in Guidewire Policy Center development using GOSU or Java.
-          Familiarity with Guidewire Studio and Configuration, Agile software
-          development practices, XML, XSLT, XSD, and automated testing (e.g.,
-          Selenium) is beneficial. The company does not accept unsolicited
-          resumes from external recruiting agencies or firms.
+          Qualifications include
+          {isShowMore && (
+            <span>
+              a Bachelor's degree or equivalent experience, critical thinking,
+              problem-solving, and time-management skills. The candidate should
+              be a team player with excellent interpersonal and communication
+              skills, self-motivated, and have at least 1+ years of experience
+              in Guidewire Policy Center development using GOSU or Java.
+              Familiarity with Guidewire Studio and Configuration, Agile
+              software development practices, XML, XSLT, XSD, and automated
+              testing (e.g., Selenium) is beneficial. The company does not
+              accept unsolicited resumes from external recruiting agencies or
+              firms.
+            </span>
+          )}
         </p>
 
-        <p></p>
+        <button
+          class="text-blue-600 dark:text-blue-400 hover:underline"
+          onClick={toggleReadMoreLess}
+        >
+          {isShowMore ? "Read Less" : "Read More"}
+        </button>
       </div>
     </div>
   );
