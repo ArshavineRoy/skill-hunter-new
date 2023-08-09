@@ -195,5 +195,37 @@
       "skills": "customer service, problem-solving, communication",
       "details": "Salesforce is seeking a Customer Support Representative to assist their customers with any inquiries or issues they may have. The candidate should have excellent communication and problem-solving skills, as well as the ability to empathize with customers. Responsibilities include handling customer queries, troubleshooting technical issues, and providing timely solutions. The ideal candidate should have at least 1+ years of experience in customer service, a friendly and approachable demeanor, and the ability to work in a fast-paced environment."
     }
+  ],
+  "faq": [
+    {
+      "id": 2011,
+      "question": "How do I close account?",
+      "answer": "Instead of closing your account, you have the option to pause your alerts. You can also set your resume to private so that your information is not searchable on Skill Hunter. \n\n If you wish to use Skill Hunter again after closing your account, you can create a new account using the same or any other email address, however, you will not have access to any of your original information."
+    },
+    {
+      "id": 2012,
+      "question": "How do I reset my password?",
+      "answer": "If you would like to reset your password, please visit the Sign In link in the upper right corner of any Skill Hunter page.\n\n Click Forgot Your Password? at the bottom of the login box, then enter the email address associated with your Skill Hunter account and click Submit. \n\nCheck your spam or junk folder if you don't see the email in your inbox. Be sure to click the link as soon as you receive it - it's valid for 24 hours."
+    },
+    {
+      "id": 2013,
+      "question": "I can't Sign in to My account?",
+      "answer": "If you would like to reset your password, please visit the Sign in link in the upper right-hand corner of any Skill Hunter page. \n\n Click Forgot Your Password? at the bottom of the login box, enter the email address associated with your Skill Hunter account and click Submit. Check your spam or junk folder if you don't see the email in your inbox.  \n\n If you accidentally created an Skill Hunter account with a typo in your email or if you no longer have access to the email address, unfortunately, you will not be able to recover the password for the account and will need to create a new account. "
+    },
+    {
+      "id": 2021,
+      "question": "How can I upload my cv using Skill Hunter app?",
+      "answer": "Use the upload feature in the user's page to upload your cv"
+    },
+    {
+      "id": 2022,
+      "question": "How to apply for a job in Skill Hunter?",
+      "answer": "We are so happy you are choosing to use Skill Hunter to assist in your job search! Please note that Skill Hunter does not operate as a recruiting service, but rather functions as a job search engine. \n\n To apply for jobs on Skill Hunter, first navigate to our homepage. Here you will find a search bar, you can enter your desired keywords related to the type of job you’re looking for, a company name, or industry you would like to work in.Once you have your search set up, click  view  details."
+    },
+    {
+      "id": 2023,
+      "question": "Improving Your Skill Hunter Job Searches (Tips and Help)",
+      "answer": " Employers post hundreds of new jobs every month. Sifting through so many jobs can be hard, frustrating, and sometimes stressful. Our goal in this article is to help you maximize your job search and connect you to the right employers.To do that use keyword combinations in the search bar"
+    }
   ]
 }
