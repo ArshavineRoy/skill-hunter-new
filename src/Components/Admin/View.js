@@ -35,7 +35,7 @@ function View({ jobs }) {
                         {career.experience}+ years
                       </button>
                     </div>
-                    <p className="pt-4">{career.description}</p>
+
                   </div>
 
                   <div class="w-auto p-2">
@@ -61,6 +61,7 @@ function View({ jobs }) {
                     </div>
                   </div>
                 </div>
+                <p className="pt-4">{career.description}</p>
               </a>
             </div>
           </div>

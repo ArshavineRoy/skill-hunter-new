@@ -9,7 +9,7 @@ function Card({ career, onButtonClick }) {
   return (
     <div className="max-w-3xl mx-auto">
       <div className="flex flex-wrap ">
-        <div className="w-full p-1">
+        <div className="w-full p-1" onClick={() => detailsHandle(career.id)}>
           <a
             className="block p-6 bg-white hover:bg-opacity-50 transform hover:-translate-y-1 rounded-lg transition duration-500"
             href="#"
@@ -37,11 +37,11 @@ function Card({ career, onButtonClick }) {
                       {career.experience}+ years
                   </button>
                 </div>
-                <p className="pt-4">{career.description}</p>
+
               </div>
               
               <div className="w-auto p-2">
-                <div className="flex flex-row justify-center">
+                <div className="flex flex-row items-center justify-center">
                   <Link
                     to="/"
                     onClick={() => detailsHandle(career.id)}
@@ -51,6 +51,7 @@ function Card({ career, onButtonClick }) {
                   </Link>
                 </div>
               </div>
+              <p className="pt-4">{career.description}</p>
             </div>
           </a>
         </div>

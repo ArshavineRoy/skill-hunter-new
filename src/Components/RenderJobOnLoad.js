@@ -4,47 +4,50 @@ import { useState } from "react";
 
 function RenderJobOnLoad() {
   const [isShowMore, setIsShowMore] = useState(false);
-      
-    const toggleReadMoreLess = () => {
-      setIsShowMore(!isShowMore);
-    };
-  
+
+  const [isApply, setIsApply] = useState(false);
+
+  const toggleApply = () => {
+    setIsApply(!isApply);
+  };
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
+
   return (
     <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
       <div className="flex items-center justify-between">
         <span className="text-sm font-light text-gray-600 dark:text-gray-400">
-          Jan 15, 2022
+          30/1/2023
         </span>
         <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">
-          JavaScript
+          Full-time
         </a>
       </div>
       <div className="mt-2">
         <a
-          href="https://stackdiary.com/"
+          href="#"
           className="text-2xl font-bold text-gray-900 "
         >
-          Senior React Developer
+          Senior Software Engineer
         </a>
         <p className="mt-2 text-gray-600 font-bold">Nairobi</p>
       </div>
       <div className="flex items-center justify-between mt-4">
-        <button  onClick={toggleReadMoreLess}
+        <button
+          onClick={toggleApply}
           type="button"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          {isShowMore ? "Close" : "Apply"}
-         
+          {isApply ? "Close" : "Apply"}
         </button>
-        <button 
+        <button
           type="button"
-          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
         >
-          Save
+          <i class="fa-regular fa-bookmark text-lg"></i>
         </button>
-        <button class="text-blue-600 dark:text-blue-400 hover:underline" onClick={toggleReadMoreLess}>
-        {isShowMore ? "Read Less" : "Read More"}
-      </button>
         <a
           href="#"
           className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -53,7 +56,7 @@ function RenderJobOnLoad() {
         </a>
         <div className="flex items-center">
           <img
-            src="https://stackdiary.com/140x100.png"
+            src="/company.png"
             alt="Author Photo"
             className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
           />
@@ -62,29 +65,52 @@ function RenderJobOnLoad() {
           </a>
         </div>
       </div>
-      {isShowMore && (
-          <>
-       <Apply />
-  </>
-  )}
-      <div className="max-w-2xl px-8 mt-4 text-left py-4 mx-auto">
 
-        <p>
-          Since its founding over 80 years ago, Krispy Kreme’s focus has
-          remained the same - making fresh, premium quality doughnuts inspired
-          by their founder’s original recipe. The brand’s iconic Hot Light lets
-          guests know when doughnuts are being made fresh in shop so they can
-          enjoy hot doughnuts fresh off the line. To make Krispy Kreme’s in-shop
-          experience even sweeter, many shops across the globe feature the
-          brands one-of-a-kind doughnut theatre, an immersive, interactive
-          experience through which guests can see Krispy Kreme’s
-          melt-in-your-mouth doughnuts being made right before their eyes. To be
-          successful in this role, you should be well-organized, have
-          exceptional time management skills, discretion, and be able to act
-          without guidance.
+      {isApply && (
+        <>
+          <Apply toggleApply={toggleApply} />
+        </>
+      )}
+      <div className="card mt-4 p-3">
+        <h3 className="font-bold mb-3 pt-2">Skills</h3>
+        <p className="mb-1">react, js, html, css, scrum</p>
+      </div>
+
+      <div className="card mt-4 p-3">
+        <h3 className="font-bold mb-3 pt-2">Job Details</h3>
+        <p className="mb-6">
+          The company is seeking a Software Engineer with expertise in Guidewire
+          GOSU to join their cross-functional team in the E&S insurance segment.
+          The engineer will collaborate with various teams to enhance and
+          maintain systems supporting business processes. Responsibilities
+          include delivering solutions, implementing features, estimating tasks,
+          conducting testing, debugging, and staying updated on software design
+          best practices. The role involves active participation in an agile
+          development environment, effective communication with stakeholders,
+          and contributing to application support issue resolutions.
+          Qualifications include a
+          {isShowMore && (
+            <span>
+              Bachelor's degree or equivalent experience, critical thinking,
+              problem-solving, and time-management skills. The candidate should
+              be a team player with excellent interpersonal and communication
+              skills, self-motivated, and have at least 1+ years of experience
+              in Guidewire Policy Center development using GOSU or Java.
+              Familiarity with Guidewire Studio and Configuration, Agile
+              software development practices, XML, XSLT, XSD, and automated
+              testing (e.g., Selenium) is beneficial. The company does not
+              accept unsolicited resumes from external recruiting agencies or
+              firms.
+            </span>
+          )}
         </p>
 
-        <p></p>
+        <button
+          class="text-blue-600 dark:text-blue-400 hover:underline"
+          onClick={toggleReadMoreLess}
+        >
+          {isShowMore ? "Read Less" : "Read More"}
+        </button>
       </div>
     </div>
   );

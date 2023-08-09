@@ -34,6 +34,7 @@ function Filter({ onFilter, onLocationFilter }) {
     "Kisii",
     "Nyeri",
     "Embu",
+    "Thika",
     "Kakamega",
   ];
 
