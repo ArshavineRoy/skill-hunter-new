@@ -16,20 +16,17 @@ function RenderJobOnLoad() {
   };
 
   return (
-    <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md">
       <div className="flex items-center justify-between">
         <span className="text-sm font-light text-gray-600 dark:text-gray-400">
           30/1/2023
         </span>
-        <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">
+        <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer">
           Full-time
         </a>
       </div>
       <div className="mt-2">
-        <a
-          href="#"
-          className="text-2xl font-bold text-gray-900 "
-        >
+        <a href="#" className="text-2xl font-bold text-gray-900 ">
           Senior Software Engineer
         </a>
         <p className="mt-2 text-gray-600 font-bold">Nairobi</p>
@@ -46,7 +43,7 @@ function RenderJobOnLoad() {
           type="button"
           className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
         >
-          <i class="fa-regular fa-bookmark text-lg"></i>
+          <i className="fa-regular fa-bookmark text-lg"></i>
         </button>
         <a
           href="#"
@@ -106,7 +103,7 @@ function RenderJobOnLoad() {
         </p>
 
         <button
-          class="text-blue-600 dark:text-blue-400 hover:underline"
+          className="text-blue-600 dark:text-blue-400 hover:underline"
           onClick={toggleReadMoreLess}
         >
           {isShowMore ? "Read Less" : "Read More"}

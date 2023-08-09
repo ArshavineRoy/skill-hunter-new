@@ -36,7 +36,7 @@ function Admin() {
   };
 
   return (
-    <div className='grid grid-cols-2 justify-center'> 
+    <div className='grid grid-cols-2 justify-center '> 
       <div ref={leftSectionRef} style={{ overflowY: "auto", height: "82vh" }}><View jobs={jobs} /></div>        
       <div><NewJob /></div>
     </div>
