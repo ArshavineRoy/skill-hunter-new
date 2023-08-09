@@ -23,23 +23,26 @@ function Card({ career, onButtonClick }) {
                 <p className="text-lg">{career.location}</p>
 
                 <div className="mt-3">
-                  <span className="bg-gray-300 mr-3 px-2.5 py-1.5 rounded-lg">
-                    {career.type}
-                  </span>
-                  <span className="bg-green-100 mr-3 px-2.5 py-1.5 rounded-lg">
+                  <button type="button" className="bg-cyan-200 border mr-3 px-2 py-1.5 rounded-lg">
+                    <i class="fa-regular fa-clock"></i>{" "}
+                    {career.type.charAt(0).toUpperCase() +
+                      career.type.slice(1).toLowerCase()}
+                  </button>
+                  <button type="button" className="bg-green-100 border mr-3 px-2.5 py-1.5 rounded-lg">
                     {" "}
-                    <i class="fa fa-money-bills"></i> ${career.salary.toLocaleString()} per year
-                  </span>
+                    <i class="fa fa-money-bills"></i> $
+                    {career.salary.toLocaleString()} per year
+                  </button>
                   <button
-                      type="button"
-                      className="text-gray-900 border border-gray-300 px-2 py-1 rounded-lg"
-                    >
-                      {career.experience}+ years
+                    type="button"
+                    className="text-gray-900 border bg-orange-100 px-2 py-1.5 rounded-lg"
+                  >
+                    {" "}
+                    <i class="fa fa-user-gear"></i> {career.experience}+ years
                   </button>
                 </div>
-
               </div>
-              
+
               <div className="w-auto p-2">
                 <div className="flex flex-row items-center justify-center">
                   <Link

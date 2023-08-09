@@ -1,70 +1,178 @@
-# Getting Started with Create React App
+# SKILL HUNTER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+[![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Skill Hunter is a comprehensive web application designed to be your ultimate companion in the job hunting journey. Whether you're a fresh graduate, a seasoned professional, or someone looking for a career change, Skill Hunter is here to empower and guide you towards landing your dream job.
 
-### `npm start`
+![homepage](public/droid-home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These are the dependencies used in the Skill Hunter project. They form the foundation of the web application, providing essential functionalities, UI components, and routing capabilities. Make sure to install these dependencies before running the application using `npm install` or `yarn install`.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v18.15.0 or later)
+- npm (v9.6.7 or later)
 
-### `npm run build`
+### Front-end Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React: v18.2.0
+- React DOM: v18.2.0
+- React Icons: v4.10.1
+- React Router DOM: v6.14.2
+- React Scripts: v5.0.1
+- React Toastify: v9.1.3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dev Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Tailwindcss: v3.3.3
 
-### `npm run eject`
+## View deployed project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+https://skill-hunter.onrender.com/
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+git clone https://github.com/Bisinle/Skill-Hunter
+```
 
-## Learn More
+### 2. Navigate to the project directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd Skill-Hunter
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Install required dependencies
 
-### Code Splitting
+In the project directory, install the required dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm install
+```
 
-### Analyzing the Bundle Size
+or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+yarn install
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 4. Install and start JSON server
 
-### Advanced Configuration
+#### Install JSON server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm install -g json-server
+```
 
-### Deployment
+#### Start JSON Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+json-server --watch db.json
+```
 
-### `npm run build` fails to minify
+- **Note:** Running this command will instruct `json-server` to use the `db.json` file in the terminal's current directory, so make sure to run this command from the same directory as this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Test the server by visiting this route in the browser
+
+```
+http://localhost:3000/careers
+```
+
+Sample:
+
+```json
+{
+    "id": 1,
+    "title": "Senior Software Engineer",
+    "salary": 5000,
+    "location": "Nairobi",
+    "company": "Amazon",
+    "description": "Design web and mobile applications, testing and documentation",
+    "type": "full-time",
+    "posted": "30/1/2023",
+    "experience": 4,
+    "skills": "react, js, html, css, scrum",
+    "details": "The company is seeking a Software Engineer with expertise in Guidewire GOSU to join their cross-functional team in the E&S insurance segment. The engineer will collaborate with various teams to enhance and maintain systems supporting business processes. Responsibilities include delivering solutions, implementing features, estimating tasks, conducting testing, debugging, and staying updated on software design best practices..."
+},
+
+```
+
+### 5. Start the development server
+
+```
+npm start
+```
+
+This runs the app in the development mode.
+
+### 6. Open your browser and interact with the app
+
+The app will open on your default browser automatically when `npm start` is run, but if it doesn't, open [http://localhost:3000](http://localhost:3000) to view it.
+
+
+## Features
+
+- New Job Listings:
+    - See new job listings in the homepage.
+
+- Job Search and Filter:
+    - Easily search and filter job listings from various industries and locations. Find opportunities that match your skills and interests.
+
+  ![filter](public/filter-bots.png)
+
+- View Job Details:
+    - Get in-depth information about each job listing, including company details, job description, required qualifications, and more.
+
+  ![filter](public/filter-bots.png)
+
+- An Admin Profile: 
+
+    - The administrator profile allows priviledged users to check and edit job details as well as delete job postings.
+
+    - They can also add new job listings as is seen on the form on the right side.
+
+    - Applications for these jobs are received and admins can toggle view between the form and the applications.
+
+    ![filter](public/filter-bots.png)
+
+- Admin Profile Applications Table
+    - View the list of applications made by the users on this interactive table that also allows deleting of records.
+
+    ![filter](public/filter-bots.png)
+
+
+## Acknowledgements
+We would like to express our gratitude to the open-source community and all the developers whose libraries and tools have made this project possible.
+
+Thank you for using Skill Hunter! We hope it helps you on your journey to a successful and fulfilling career. Happy job hunting! 🚀
+
+## Authors & License
+
+Authored by:
+
+[Abdiwadud Mohammed](https://github.com/Bisinle)
+
+[Arshavine Waema](https://github.com/ArshavineRoy)
+
+[Geoffrey Bii](https://github.com/Bii-teki)
+
+[Yusra Mohamed](https://github.com/yusram99)
+
+[Mercy Chepchirchir](https://github.com/Mercy-chepchirchir)
+
+[Houstin Angwenyi](https://github.com/Houstin0)
+
+
+
+Licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
