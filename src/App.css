@@ -30,58 +30,13 @@ button {
   cursor: pointer;
 }
 
-/* .nav-bar {
-  position: sticky;
-  top: 0;
-} */
-
-/* home  */
-.home-layout {
-  width: 1200px;
-  margin: auto;
-}
-
-
-/*  header and navbar */
-/* header {
-  position: sticky;
-  top: 0;
-} */
-/* 
-.nav-bar {
-  position: sticky;
-  top: 0;
-} */
-
-header span {
-  color: var(--primary);
-}
-header nav {
-  display: flex;
-  gap: 16px;
-  justify-content: end;
-  max-width: 1200px;
-  margin: 0 auto;
-
-}
-header nav h1 {
-  margin-right: auto;
-  border-bottom: 3px solid var(--primary);
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-header nav a {
-  text-decoration: none;
-  padding: 6px;
-  border-radius: 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-header nav a.active {
+/* Use nav a.active for all NavLinks */
+nav a.active {
   background-color: var(--primary);
-  color: var(--secondary);
+  color: white;
+  border-radius: 0.5rem;
 }
+
 
 /* page content */
 main {

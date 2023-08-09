@@ -5,36 +5,20 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      {/* <div className="nav-bar">
-        <header>
-          <nav>
-            <h1>
-              SKILL <span>HUNTER</span>
-            </h1>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="admin">Admin</NavLink>
-            <NavLink to="help">Help</NavLink>
-          </nav>
-        </header>
-        <main>
-          <Outlet />
-        </main>
-      </div> */}
-      <div className="w-full mx-auto bg-white border-b 2xl:max-w-7xl">
-        <div className="relative flex flex-col w-full p-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+      <div className="w-full mx-auto border-b-2 mb-[100px] bg-white font-bold 2xl:max-w-7xl">
+        <div className="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div className="flex flex-row items-center justify-between lg:justify-start">
             <a
-              className="text-lg tracking-tight text-black uppercase focus:outline-none focus:ring lg:text-2xl"
+              className="text-lg tracking-tight text-black uppercase focus:outline-none lg:text-2xl"
               href="/"
             >
-              <span className="lg:text-lg uppercase focus:ring-0">
-                windstatic
-              </span>
+              <h1>
+                SKILL <span style={{ color: "slateblue" }}>HUNTER</span>
+              </h1>
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden"
+              className="inline-flex items-center justify-center p-2 text-gray-700 hover:text-black focus:outline-none focus:text-black md:hidden"
             >
               <svg
                 className="w-6 h-6"
@@ -66,31 +50,42 @@ function NavBar() {
                 : "hidden md:pb-0 md:flex md:justify-end md:flex-row"
             }
           >
-            <a
-              className="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600 lg:ml-auto"
-              href="#"
+            <NavLink
+              to="/"
+              className="px-2 py-2 text-sm text-gray-700 lg:px-6 mr-2 md:px-3"
+              style={{ fontSize: "18px" }}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="about"
+              className="px-2 py-2 text-sm text-gray-700 lg:px-6 md:px-3 mr-2"
+              style={{ fontSize: "18px"}}
             >
               About
-            </a>
-            <a
-              className="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600"
-              href="#"
+            </NavLink>
+            <NavLink
+              to="admin"
+              className="px-2 py-2 text-sm text-gray-700 lg:px-6 md:px-3 mr-2"
+              style={{ fontSize: "18px" }}
             >
-              Contact
-            </a>
-            <a
-              className="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600"
-              href="#"
+              Employers
+            </NavLink>
+            <NavLink
+              to="help"
+              className="px-2 py-2 text-sm text-gray-700 lg:px-6 md:px-3 mr-2"
+              style={{ fontSize: "18px" }}
             >
-              Documentation
-            </a>
-            <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
-              <button className="block px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline">
-                Sign in
-              </button>
+              Help
+            </NavLink>
+
+            <div className="inline-flex items-center gap-2 px-2 list-none lg:ml-auto">
               <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-black rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black">
-                Sign up
+                Log in
               </button>
+              {/* <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-black rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black">
+                Sign up
+              </button> */}
             </div>
           </nav>
         </div>

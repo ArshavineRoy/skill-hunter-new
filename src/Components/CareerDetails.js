@@ -62,7 +62,7 @@ function CareerDetails({ careerData, careerId }) {
               type="button"
               className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
             >
-              <i class="fa-regular fa-bookmark text-lg"></i>
+              <i className="fa-regular fa-bookmark text-lg"></i>
             </button>
 
             <a
@@ -114,7 +114,7 @@ function CareerDetails({ careerData, careerId }) {
             </p>
 
             <button
-              class="text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
               onClick={toggleReadMoreLess}
             >
               {isShowMore ? "Read Less" : "Read More"}

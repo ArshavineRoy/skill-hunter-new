@@ -105,7 +105,7 @@ function Home() {
       <div>
         <div className="grid grid-cols-2 justify-center">
           <div>
-            <section className="py-px lg:pb-18 mb-1 bg-gray-100 overflow-hidden">
+            <section className="py-px lg:pb-18 mb-1  bg-gray-100 overflow-hidden">
             {/* adjustable viewheight */}
               <div ref={leftSectionRef} style={{ overflowY: "auto", height: "82vh" }} className="container px-4 mx-auto mb-10">
 

@@ -10,29 +10,31 @@ function NewJob() {
   const [state, setState] = useState(false);
   if (state) {
     return (
-      <main id="content" role="main" class="w-full  max-w-md mx-auto p-1">
-        <div class="mt-7 bg-white  rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700">
-          <div class="p-4 sm:p-7">
-            <div class="text-center">
-              <h1 class="block text-2xl font-bold text-gray-800">Post a Job</h1>
+      <main id="content" role="main" className="w-full  max-w-md mx-auto p-1">
+        <div className="mt-7 bg-white  rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700">
+          <div className="p-4 sm:p-7">
+            <div className="text-center">
+              <h1 className="block text-2xl font-bold text-gray-800">
+                Post a Job
+              </h1>
             </div>
 
-            <div class="mt-5">
+            <div className="mt-5">
               <form>
-                <div class="grid gap-y-2">
+                <div className="grid gap-y-2">
                   <div>
                     <label
                       for="title"
-                      class="block text-sm font-bold ml-1 mb-2"
+                      className="block text-sm font-bold ml-1 mb-2"
                     >
                       Title
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <input
                         type="text"
                         id="title"
                         name="title"
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         required
                         aria-describedby="email-error"
                       />
@@ -41,16 +43,16 @@ function NewJob() {
                   <div>
                     <label
                       for="company"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Company
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <input
                         type="text"
                         id="company"
                         name="company"
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         required
                         aria-describedby="email-error"
                       />
@@ -59,15 +61,15 @@ function NewJob() {
                   <div>
                     <label
                       for="location"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Location
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <select
                         id="location"
                         name="location"
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                       >
                         <option value="nairobi">Nairobi</option>
                         <option value="2">Nakuru</option>
@@ -85,16 +87,16 @@ function NewJob() {
                   <div>
                     <label
                       for="salary"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Salary
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <input
                         type="number"
                         id="salary"
                         name="salary"
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         required
                         aria-describedby="email-error"
                       />
@@ -103,13 +105,13 @@ function NewJob() {
                   <div>
                     <label
                       for="description"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Description
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <textarea
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         id="description"
                         name="description"
                         rows="3"
@@ -120,14 +122,14 @@ function NewJob() {
                   <div>
                     <label
                       for="type"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Job Type
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <select
                         id="type"
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                       >
                         <option value="1">Full-Time</option>
                         <option value="2">Part-Time</option>
@@ -138,13 +140,13 @@ function NewJob() {
                   <div>
                     <label
                       for="email"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Experience
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <textarea
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         id="exampleFormControlTextarea1"
                         rows="3"
                         placeholder="Your message"
@@ -154,13 +156,13 @@ function NewJob() {
                   <div>
                     <label
                       for="email"
-                      class="block text-sm font-bold ml-1 mb-2 "
+                      className="block text-sm font-bold ml-1 mb-2 "
                     >
                       Skills
                     </label>
-                    <div class="relative">
+                    <div className="relative">
                       <textarea
-                        class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
                         id="exampleFormControlTextarea1"
                         rows="3"
                         placeholder="Your message"
@@ -172,7 +174,7 @@ function NewJob() {
                       onClick={() => {
                         setState(false);
                       }}
-                      class="py-3 px-4 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+                      className="py-3 px-4 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
                     >
                       Close
                     </button>
@@ -180,7 +182,7 @@ function NewJob() {
                       type="button"
                       className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
                     >
-                      <i class="fa-regular fa-bookmark text-lg"></i>
+                      <i className="fa-regular fa-bookmark text-lg"></i>
                     </button>
                   </div>
                 </div>
@@ -197,7 +199,7 @@ function NewJob() {
           onClick={() => {
             setState(true);
           }}
-          class="bg-indigo-500 px-7 py-2  mt-10 ml-56 rounded-md text-md text-white font-semibold"
+          className="bg-indigo-500 px-7 py-2  mt-10 ml-56 rounded-md text-md text-white font-semibold"
         >
           Do you want to post a jobs?
         </button>
@@ -212,10 +214,7 @@ function NewJob() {
             </a>
           </div>
           <div className="mt-2">
-            <a
-              href="#"
-              className="text-2xl font-bold text-gray-900 "
-            >
+            <a href="#" className="text-2xl font-bold text-gray-900 ">
               Senior Software Engineer
             </a>
             <p className="mt-2 text-gray-600 font-bold">Nairobi</p>
@@ -225,7 +224,7 @@ function NewJob() {
               type="button"
               className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
             >
-              <i class="fa-regular fa-bookmark text-lg"></i>
+              <i className="fa-regular fa-bookmark text-lg"></i>
             </button>
             <a
               href="#"
@@ -279,7 +278,7 @@ function NewJob() {
             </p>
 
             <button
-              class="text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
               onClick={toggleReadMoreLess}
             >
               {isShowMore ? "Read Less" : "Read More"}
