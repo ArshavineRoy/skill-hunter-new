@@ -9,10 +9,9 @@ function JobCard({ job, onButtonClick }) {
     <>
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-wrap ">
-          <div className="w-full p-1" onClick={(e) => { e.preventDefault(); handleJobDetails(job.id); }}>
+          <div className="w-full p-1">
             <a
               className="block p-6 bg-white hover:bg-opacity-50 transform hover:-translate-y-1 rounded-lg transition duration-500"
-              href="#"
             >
               <div className="flex flex-wrap items-center justify-between -m-2">
                 <div className="w-auto p-2">
@@ -51,14 +50,28 @@ function JobCard({ job, onButtonClick }) {
                 </div>
 
                 <div className="w-auto p-2">
-                  <div className="flex flex-row items-center justify-center">
-                    <span
-                      className="inline-block mx-auto px-4 py-2 text-white font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
-                    >
-                      View Details
-                    </span>
+                    <div className="grid justify-items-end mt-6">
+                      <button
+                        className="inline-block  w-40 px-4 py-2 text-white font-semibold tracking-tight bg-blue-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        href="#"
+                        onClick={(e) => { e.preventDefault(); handleJobDetails(job.id); }}
+                      >
+                        View Details
+                      </button>
+                      <button
+                        className="inline-block mt-2 w-40 px-4 py-2 text-white font-semibold tracking-tight bg-green-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        href="#"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        className="inline-block mt-2 w-40 px-4 py-2 text-white font-semibold tracking-tight bg-red-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                        href="#"
+                      >
+                        Delete
+                      </button>
+                    </div>
                   </div>
-                </div>
                 <p className="pt-4">{job.description}</p>
               </div>
             </a>
