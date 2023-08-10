@@ -41,10 +41,20 @@ function Admin() {
   const displayJobdata = jobs.map((job) => {
     return (
       <span key={job.id}>
-        <JobCard onButtonClick={getJobIdFromCard} job={job} />
+        <JobCard
+          onButtonClick={getJobIdFromCard}
+          job={job}
+          onDeleteJob={handleDeletedJob}
+        />
       </span>
     );
   });
+
+
+  function handleDeletedJob(deletedJob){
+    const updatedJobs = jobs.filter((job) => job.id !== deletedJob.id)
+    setJobs(updatedJobs)
+  }
 
   return (
     <>
