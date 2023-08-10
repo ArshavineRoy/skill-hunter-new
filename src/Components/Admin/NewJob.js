@@ -11,6 +11,7 @@ function NewJob({ jobs, jobId }) {
     setIsShowMore(!isShowMore);
   };
 
+
   if (postJob) {
     return (
       <main

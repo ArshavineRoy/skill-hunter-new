@@ -1,9 +1,21 @@
 import React from "react";
 
-function JobCard({ job, onButtonClick }) {
+function JobCard({ job, onButtonClick, onDeleteJob }) {
   function handleJobDetails(id) {
     onButtonClick(id);
   }
+
+  // CRUD OPERATIONS
+  // DELETE
+
+  function handleDeleteClick () {
+    fetch(`http://localhost:3000/employers/${job.id}`, {
+      method: "DELETE",
+    })
+    .then((res) => res.json())
+    .then(() => onDeleteJob(job)) //callback fn to pass job prop to parent component; Admin.
+  }
+
 
   return (
     <>
@@ -67,6 +79,7 @@ function JobCard({ job, onButtonClick }) {
                       <button
                         className="inline-block mt-2 w-40 px-4 py-2 text-white font-semibold tracking-tight bg-red-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
                         href="#"
+                        onClick={handleDeleteClick}
                       >
                         Delete
                       </button>

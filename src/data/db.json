@@ -196,7 +196,6 @@
       "details": "Salesforce is seeking a Customer Support Representative to assist their customers with any inquiries or issues they may have. The candidate should have excellent communication and problem-solving skills, as well as the ability to empathize with customers. Responsibilities include handling customer queries, troubleshooting technical issues, and providing timely solutions. The ideal candidate should have at least 1+ years of experience in customer service, a friendly and approachable demeanor, and the ability to work in a fast-paced environment."
     }
   ],
-
   "employers": [
     {
       "id": 1,
@@ -249,9 +248,86 @@
       "experience": 4,
       "skills": "product management, Agile, market research",
       "details": "Apple is looking for an experienced Product Manager to lead the development of innovative products. The candidate should have a proven track record in product management, from concept to launch. Responsibilities include defining product requirements, conducting market research, and collaborating with cross-functional teams to drive product strategy and development. Strong knowledge of Agile methodologies and the ability to prioritize features based on customer needs and business goals are essential. The candidate should have at least 3+ years of experience in product management, excellent project management skills, and the ability to thrive in a fast-paced, dynamic environment."
+    },
+    {
+      "id": 5,
+      "title": "Sales Executive",
+      "salary": 3500,
+      "location": "Eldoret",
+      "company": "Salesforce",
+      "description": "Generate leads, build relationships, and close deals with potential clients.",
+      "type": "full-time",
+      "posted": "20/5/2023",
+      "experience": 2,
+      "skills": "sales, negotiation, communication",
+      "details": "Salesforce is seeking a Sales Executive to join its high-energy sales team. The candidate should be self-motivated, results-driven, and possess excellent communication and negotiation skills. Responsibilities include prospecting potential clients, conducting sales presentations, and closing deals. You will be responsible for generating and managing leads through the entire sales cycle. The candidate should have at least 1+ years of experience in B2B sales, a proven track record of achieving sales targets, and the ability to thrive in a competitive sales environment. Knowledge of CRM software and sales automation tools is beneficial."
+    },
+    {
+      "id": 6,
+      "title": "Network Administrator",
+      "salary": 4200,
+      "location": "Machakos",
+      "company": "Cisco",
+      "description": "Configure and maintain network infrastructure for optimal performance.",
+      "type": "full-time",
+      "posted": "1/6/2023",
+      "experience": 3,
+      "skills": "networking, Cisco, troubleshooting",
+      "details": "Cisco is looking for a skilled Network Administrator to manage and maintain their network infrastructure. The candidate should have hands-on experience in configuring and troubleshooting network devices, including routers, switches, and firewalls. Responsibilities include monitoring network performance, resolving network issues, and implementing security measures. The ideal candidate should have at least 2+ years of experience in network administration, a strong understanding of TCP/IP protocols, and a Cisco certification (CCNA or CCNP). Knowledge of network monitoring tools and scripting languages is a plus."
+    },
+    {
+      "id": 7,
+      "title": "Human Resources Specialist",
+      "salary": 3800,
+      "location": "Kisii",
+      "company": "IBM",
+      "description": "Manage HR operations, recruitment, and employee relations.",
+      "type": "full-time",
+      "posted": "12/7/2023",
+      "experience": 4,
+      "skills": "human resources, recruitment, employee engagement",
+      "details": "IBM is seeking a Human Resources Specialist to support the HR operations and employee engagement initiatives. The candidate should have a strong background in human resources, including recruitment, onboarding, and employee relations. Responsibilities include managing HR processes, conducting interviews, and developing strategies to improve employee satisfaction. The ideal candidate should have at least 3+ years of experience in HR, excellent interpersonal skills, and the ability to handle sensitive HR issues with confidentiality. Knowledge of HR software and analytics is an advantage."
+    },
+    {
+      "id": 8,
+      "title": "Financial Analyst",
+      "salary": 4500,
+      "location": "Nyeri",
+      "company": "JP Morgan",
+      "description": "Analyze financial data and provide insights for decision-making.",
+      "type": "full-time",
+      "posted": "25/8/2023",
+      "experience": 3,
+      "skills": "financial analysis, Excel, data interpretation",
+      "details": "JP Morgan is looking for a Financial Analyst to join their finance team. The candidate should have a strong analytical mindset, proficiency in financial modeling, and the ability to interpret complex data. Responsibilities include analyzing financial statements, preparing reports, and providing recommendations for business improvements. The ideal candidate should have at least 2+ years of experience in financial analysis, a degree in finance or related field, and advanced Excel skills. Knowledge of financial software and the ability to work with large datasets are beneficial."
+    },
+    {
+      "id": 9,
+      "title": "Marketing Manager",
+      "salary": 4800,
+      "location": "Embu",
+      "company": "Facebook",
+      "description": "Develop marketing strategies and drive brand awareness.",
+      "type": "full-time",
+      "posted": "9/9/2023",
+      "experience": 5,
+      "skills": "marketing, brand management, social media",
+      "details": "Facebook is seeking a Marketing Manager to lead the development and execution of marketing strategies. The candidate should have a deep understanding of digital marketing, brand management, and social media platforms. Responsibilities include planning and executing marketing campaigns, analyzing market trends, and measuring the effectiveness of marketing efforts. The ideal candidate should have at least 4+ years of experience in marketing, a proven track record of successful marketing campaigns, and excellent project management skills. A degree in marketing or related field is preferred."
+    },
+    {
+      "id": 10,
+      "title": "Software Quality Assurance Engineer",
+      "salary": 4200,
+      "location": "Nairobi",
+      "company": "Netflix",
+      "description": "Ensure software quality through testing and QA processes.",
+      "type": "full-time",
+      "posted": "4/10/2023",
+      "experience": 3,
+      "skills": "QA testing, test automation, bug tracking",
+      "details": "Netflix is looking for a Software Quality Assurance Engineer to ensure the quality and reliability of their software products. The candidate should have experience in manual and automated testing, as well as a strong understanding of QA processes and methodologies. Responsibilities include writing test plans, executing test cases, and tracking defects to resolution. The ideal candidate should have at least 2+ years of experience in software QA, excellent problem-solving skills, and the ability to work in a fast-paced, Agile development environment. Knowledge of test automation tools and programming languages is a plus."
     }
   ],
-  
   "faq": [
     {
       "id": 2011,
