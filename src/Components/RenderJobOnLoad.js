@@ -19,7 +19,7 @@ function RenderJobOnLoad() {
     <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md">
       <div className="flex items-center justify-between">
         <span className="text-sm font-light text-gray-600 dark:text-gray-400">
-          30/1/2023
+          January 30, 2023
         </span>
         <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer">
           Full-time

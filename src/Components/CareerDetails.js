@@ -6,6 +6,8 @@ import Card from "./Card";
 import Careers from "./Careers";
 import RenderJobOnLoad from "./RenderJobOnLoad";
 import Apply from "./Apply";
+import formatDate from "./formatDate";
+
 
 function CareerDetails({ careerData, careerId }) {
   const { isLoading } = useContext(dataContext);
@@ -34,8 +36,8 @@ function CareerDetails({ careerData, careerId }) {
       ) : (
         <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
           <div className="flex items-center justify-between">
-            <span className="text-sm font-light text-gray-900">
-              {currentCareerDetail.posted}
+            <span className="text-sm font-light text-gray-600 dark:text-gray-400">
+              {formatDate(currentCareerDetail.posted)}
             </span>
             <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">
               {currentCareerDetail.type.charAt(0).toUpperCase() +
