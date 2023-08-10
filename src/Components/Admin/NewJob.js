@@ -13,175 +13,158 @@ function NewJob({ jobs, jobId }) {
 
   if (postJob) {
     return (
-      <main id="content" role="main" className="w-full  max-w-md mx-auto p-1">
-        <div className="mt-7 bg-white  rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700">
+      <main
+        id="content"
+        role="main"
+        className="w-full max-w-md mx-auto p-1 -mt-1"
+      >
+        <div className="bg-white rounded-xl border dark:bg-gray-800 dark:border-gray-700">
           <div className="p-4 sm:p-7">
             <div className="text-center">
-              <h1 className="block text-2xl font-bold text-gray-800">
-                Click here to post a new job
-              </h1>
+              <h3 className="block text-xl font-bold text-gray-800">
+                Fill this form to post a new job
+              </h3>
             </div>
 
-            <div className="mt-5">
-              <form>
-                <div className="grid gap-y-2">
-                  <div>
-                    <label
-                      for="title"
-                      className="block text-sm font-bold ml-1 mb-2"
-                    >
-                      Title
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        id="title"
-                        name="title"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="company"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Company
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="location"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Location
-                    </label>
-                    <div className="relative">
-                      <select
-                        id="location"
-                        name="location"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                      >
-                        <option value="nairobi">Nairobi</option>
-                        <option value="2">Nakuru</option>
-                        <option value="3">Mombasa</option>
-                        <option value="4">Kisumu</option>
-                        <option value="5">Nakuru</option>
-                        <option value="1">Eldoret</option>
-                        <option value="2">Kericho</option>
-                        <option value="3">Mombasa</option>
-                        <option value="4">Kisumu</option>
-                        <option value="5">nakuru</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="salary"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Salary
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="number"
-                        id="salary"
-                        name="salary"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="description"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Description
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="description"
-                        name="description"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="type"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Job Type
-                    </label>
-                    <div className="relative">
-                      <select
-                        id="type"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                      >
-                        <option value="1">Full-Time</option>
-                        <option value="2">Part-Time</option>
-                        <option value="3">Remote</option>
-                      </select>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Experience
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Skills
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      onClick={() => {
-                        setPostJob(false);
-                      }}
-                      className="py-3 px-4 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
-                    >
-                      Close
-                    </button>
-                  </div>
+            <div>
+              <form className="shadow-none">
+                <div className="-mb-10">
+                  <label
+                    htmlFor="title"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Title
+                  </label>
+                  <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    required
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  />
+                </div>
+                <div className="-mb-10">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Company
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    required
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label
+                    htmlFor="location"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Location
+                  </label>
+                  <select
+                    id="location"
+                    name="location"
+                    className="py-2 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  >
+                    <option value="nairobi">Nairobi</option>
+                    <option value="2">Nakuru</option>
+                    <option value="3">Mombasa</option>
+                    <option value="4">Kisumu</option>
+                    <option value="5">Nakuru</option>
+                    <option value="1">Eldoret</option>
+                    <option value="2">Kericho</option>
+                    <option value="3">Mombasa</option>
+                    <option value="4">Kisumu</option>
+                    <option value="5">nakuru</option>
+                  </select>
+                </div>
+                <div className="-mb-10">
+                  <label
+                    htmlFor="salary"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Salary
+                  </label>
+                  <input
+                    type="number"
+                    id="salary"
+                    name="salary"
+                    required
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  />
+                </div>
+                <div className="-mb-10">
+                  <label
+                    htmlFor="description"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Description
+                  </label>
+                  <textarea
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                    id="description"
+                    name="description"
+                    rows="3"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div className="mb-3">
+                  <label
+                    htmlFor="type"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Job Type
+                  </label>
+                  <select
+                    id="type"
+                    className="py-2 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                  >
+                    <option value="1">Full-Time</option>
+                    <option value="2">Part-Time</option>
+                    <option value="3">Remote</option>
+                  </select>
+                </div>
+                <div className="-mb-10">
+                  <label
+                    htmlFor="experience"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Experience
+                  </label>
+                  <textarea
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                    id="experience"
+                    rows="3"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div className="-mb-10">
+                  <label
+                    htmlFor="skills"
+                    className="block text-sm font-bold ml-1 mb-2"
+                  >
+                    Skills
+                  </label>
+                  <textarea
+                    className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
+                    id="skills"
+                    rows="3"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      setPostJob(false);
+                    }}
+                    className="py-2.5 px-3 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+                  >
+                    Close
+                  </button>
                 </div>
               </form>
             </div>
