@@ -24,7 +24,7 @@ function Home() {
   // State to hold the search term
   const [searchTerm, setSearchTerm] = useState("")
 
-  // Function to update the search term
+  // Function to update the search term 
   function handleSearch(event) {
     setSearchTerm(event.target.value)
   }

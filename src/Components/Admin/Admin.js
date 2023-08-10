@@ -1,18 +1,17 @@
-import React, {useState, useEffect, useRef} from 'react'
-import View from './View'
-import NewJob from './NewJob'
-
+import React, { useState, useEffect, useRef } from "react";
+import JobCard from "./JobCard";
+import NewJob from "./NewJob";
 
 function Admin() {
-
-  const[jobs, setJobs] = useState([])
+  const [jobs, setJobs] = useState([]);
   const leftSectionRef = useRef(null);
   const rightSectionRef = useRef(null);
+  const [jobId, setJobId] = useState();
 
-  useEffect(()=>{
-    fetch("http://localhost:3000/careers")
-    .then(r=>r.json())
-    .then(data=>setJobs(data))
+  useEffect(() => {
+    fetch("http://localhost:3000/employers")
+      .then((r) => r.json())
+      .then((data) => setJobs(data));
 
     const leftSection = leftSectionRef.current;
     const rightSection = rightSectionRef.current;
@@ -26,7 +25,7 @@ function Admin() {
         leftSection.removeEventListener("scroll", handleLeftScroll);
       }
     };
-  }, [])
+  }, []);
 
   const handleLeftScroll = () => {
     const rightSection = rightSectionRef.current;
@@ -35,14 +34,45 @@ function Admin() {
     }
   };
 
-  return (
-    <div className='grid grid-cols-2 justify-center '> 
-      <div ref={leftSectionRef} style={{ overflowY: "auto", height: "82vh" }}><View jobs={jobs} /></div>        
-      <div><NewJob /></div>
-    </div>
+  function getJobIdFromCard(id) {
+    return setJobId(id);
+  }
 
-    //right section scroll - remove the height property: ref={rightSectionRef} style={{ overflowY: "auto", height: "500px" }}
-  )
+  const displayJobdata = jobs.map((job) => {
+    return (
+      <span key={job.id}>
+        <JobCard onButtonClick={getJobIdFromCard} job={job} />
+      </span>
+    );
+  });
+
+  return (
+    <>
+      <div>
+        <div className="grid grid-cols-2 justify-center">
+          <div>
+            <section className="py-px lg:pb-18 mb-1  bg-gray-100 overflow-hidden">
+              <div
+                ref={leftSectionRef}
+                style={{ overflowY: "auto", height: "82vh" }}
+                className="container px-4 py-4 mx-auto mb-10"
+              >
+                {displayJobdata}
+              </div>
+            </section>
+          </div>
+
+          <div
+            ref={rightSectionRef}
+            style={{ overflowY: "auto" }}
+            className="max-w-1xl px-4 mx-auto "
+          >
+            <NewJob jobs={jobs} jobId={jobId} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Admin
+export default Admin;

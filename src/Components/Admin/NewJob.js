@@ -1,207 +1,119 @@
 import React, { useState } from "react";
-import Apply from "../Apply";
 
-function NewJob() {
+function NewJob({ jobs, jobId }) {
   const [isShowMore, setIsShowMore] = useState(false);
+  const [postJob, setPostJob] = useState(false);
+
+  const currentJobCard = jobs.find((job) => job.id === jobId);
+ 
 
   const toggleReadMoreLess = () => {
     setIsShowMore(!isShowMore);
   };
-  const [state, setState] = useState(false);
-  if (state) {
-    return (
-      <main id="content" role="main" className="w-full  max-w-md mx-auto p-1">
-        <div className="mt-7 bg-white  rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700">
-          <div className="p-4 sm:p-7">
-            <div className="text-center">
-              <h1 className="block text-2xl font-bold text-gray-800">
-                Post a Job
-              </h1>
-            </div>
 
-            <div className="mt-5">
-              <form>
-                <div className="grid gap-y-2">
-                  <div>
-                    <label
-                      for="title"
-                      className="block text-sm font-bold ml-1 mb-2"
-                    >
-                      Title
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        id="title"
-                        name="title"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="company"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Company
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="location"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Location
-                    </label>
-                    <div className="relative">
-                      <select
-                        id="location"
-                        name="location"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                      >
-                        <option value="nairobi">Nairobi</option>
-                        <option value="2">Nakuru</option>
-                        <option value="3">Mombasa</option>
-                        <option value="4">Kisumu</option>
-                        <option value="5">Nakuru</option>
-                        <option value="1">Eldoret</option>
-                        <option value="2">Kericho</option>
-                        <option value="3">Mombasa</option>
-                        <option value="4">Kisumu</option>
-                        <option value="5">nakuru</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="salary"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Salary
-                    </label>
-                    <div className="relative">
-                      <input
-                        type="number"
-                        id="salary"
-                        name="salary"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        required
-                        aria-describedby="email-error"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="description"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Description
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="description"
-                        name="description"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="type"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Job Type
-                    </label>
-                    <div className="relative">
-                      <select
-                        id="type"
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                      >
-                        <option value="1">Full-Time</option>
-                        <option value="2">Part-Time</option>
-                        <option value="3">Remote</option>
-                      </select>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Experience
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      for="email"
-                      className="block text-sm font-bold ml-1 mb-2 "
-                    >
-                      Skills
-                    </label>
-                    <div className="relative">
-                      <textarea
-                        className="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Your message"
-                      ></textarea>{" "}
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      onClick={() => {
-                        setState(false);
-                      }}
-                      className="py-3 px-4 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
-                    >
-                      Close
-                    </button>
-                    <button
-                      type="button"
-                      className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
-                    >
-                      <i className="fa-regular fa-bookmark text-lg"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </main>
+  if (postJob) {
+    return (
+      <></>
     );
   } else {
+    if (currentJobCard) {
+      return (
+        <>
+          <button
+            onClick={() => {
+              setPostJob(true);
+            }}
+            className="bg-indigo-500 px-7 py-2 ml-30 rounded-md text-md text-white font-semibold"
+          >
+            Do you want to post a job?
+          </button>
+
+          <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-light text-gray-600 dark:text-gray-400">
+                {currentJobCard.posted}
+              </span>
+              <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">
+                {currentJobCard.type.charAt(0).toUpperCase() +
+                  currentJobCard.type.slice(1).toLowerCase()}
+              </a>
+            </div>
+            <div className="mt-2">
+              <a href="#" className="text-2xl font-bold text-gray-900 ">
+                {currentJobCard.title}
+              </a>
+              <p className="mt-2 text-gray-600 font-bold">
+                {currentJobCard.location}
+              </p>
+            </div>
+            <div className="flex items-center justify-between mt-4">
+              <button
+                type="button"
+                className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-1.5 mr-2 mb-2 "
+              >
+                <i className="fa-regular fa-bookmark text-lg"></i>
+              </button>
+              <a
+                href="#"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Read more ⟶
+              </a>
+              <div className="flex items-center">
+                <img
+                  src="/company.png"
+                  alt="Author Photo"
+                  className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
+                />
+                <a className="font-bold text-gray-700 cursor-pointer dark:text-gray-700">
+                  {currentJobCard.company}
+                </a>
+              </div>
+            </div>
+            <div className="card mt-4 p-3">
+              <h3 className="font-bold mb-3 pt-2">Skills</h3>
+              <p className="mb-1">{currentJobCard.skills}</p>
+            </div>
+            <div className="card mt-4 p-3">
+              <h3 className="font-bold mb-3 pt-2">Job Details</h3>
+              <p className="mb-6">
+                {currentJobCard.details
+                  .trim()
+                  .split(/\s+/)
+                  .slice(0, 80)
+                  .join(" ")}
+                {isShowMore && (
+                  <span>
+                    {currentJobCard.details
+                      .trim()
+                      .split(/\s+/)
+                      .slice(80)
+                      .join(" ")}
+                  </span>
+                )}
+              </p>
+
+              <button
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+                onClick={toggleReadMoreLess}
+              >
+                {isShowMore ? "Read Less" : "Read More"}
+              </button>
+            </div>
+          </div>
+        </>
+      );
+    }
+
     return (
       <>
         <button
           onClick={() => {
-            setState(true);
+            setPostJob(true);
           }}
-          className="bg-indigo-500 px-7 py-2  mt-10 ml-56 rounded-md text-md text-white font-semibold"
+          className="bg-indigo-500 px-7 py-2 ml-30 rounded-md text-md text-white font-semibold"
         >
-          Do you want to post a jobs?
+          Do you want to post a job?
         </button>
 
         <div className="max-w-2xl px-8 mt-4 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
