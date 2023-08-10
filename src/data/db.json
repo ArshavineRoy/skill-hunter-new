@@ -196,6 +196,61 @@
       "details": "Salesforce is seeking a Customer Support Representative to assist their customers with any inquiries or issues they may have. The candidate should have excellent communication and problem-solving skills, as well as the ability to empathize with customers. Responsibilities include handling customer queries, troubleshooting technical issues, and providing timely solutions. The ideal candidate should have at least 1+ years of experience in customer service, a friendly and approachable demeanor, and the ability to work in a fast-paced environment."
     }
   ],
+
+  "employers": [
+    {
+      "id": 1,
+      "title": "Senior Software Engineer",
+      "salary": 5000,
+      "location": "Nairobi",
+      "company": "Amazon",
+      "description": "Design web and mobile applications, testing and documentation",
+      "type": "full-time",
+      "posted": "30/1/2023",
+      "experience": 4,
+      "skills": "react, js, html, css, scrum",
+      "details": "The company is seeking a Software Engineer with expertise in Guidewire GOSU to join their cross-functional team in the E&S insurance segment. The engineer will collaborate with various teams to enhance and maintain systems supporting business processes. Responsibilities include delivering solutions, implementing features, estimating tasks, conducting testing, debugging, and staying updated on software design best practices. The role involves active participation in an agile development environment, effective communication with stakeholders, and contributing to application support issue resolutions. Qualifications include a Bachelor's degree or equivalent experience, critical thinking, problem-solving, and time-management skills. The candidate should be a team player with excellent interpersonal and communication skills, self-motivated, and have at least 1+ years of experience in Guidewire Policy Center development using GOSU or Java. Familiarity with Guidewire Studio and Configuration, Agile software development practices, XML, XSLT, XSD, and automated testing (e.g., Selenium) is beneficial. The company does not accept unsolicited resumes from external recruiting agencies or firms."
+    },
+    {
+      "id": 2,
+      "title": "UX/UI Designer",
+      "salary": 4000,
+      "location": "Mombasa",
+      "company": "Google",
+      "description": "Design user experiences and user interfaces for web and mobile applications.",
+      "type": "full-time",
+      "posted": "15/2/2023",
+      "experience": 3,
+      "skills": "wireframing, prototyping, Adobe XD, Sketch",
+      "details": "We are looking for a talented UX/UI Designer to create amazing user experiences and interfaces. The ideal candidate should have an eye for clean and artful design, possess superior UX/UI skills, and be able to translate high-level requirements into interaction flows and artifacts. You will be responsible for creating wireframes, storyboards, user flows, and prototypes to effectively communicate interaction and design ideas. Proficiency in Adobe XD, Sketch, or other design tools is a must. The candidate should have at least 2+ years of experience in designing web and mobile applications, a strong portfolio demonstrating user-centered design, and excellent collaboration and communication skills."
+    },
+    {
+      "id": 3,
+      "title": "Data Scientist",
+      "salary": 5500,
+      "location": "Kisumu",
+      "company": "Microsoft",
+      "description": "Analyze large datasets, develop machine learning models, and derive insights.",
+      "type": "full-time",
+      "posted": "10/3/2023",
+      "experience": 5,
+      "skills": "Python, R, machine learning, data visualization",
+      "details": "Microsoft is seeking a Data Scientist to work on a wide range of data-driven projects. The ideal candidate should be proficient in Python, R, and machine learning techniques. You will be responsible for analyzing large datasets, developing predictive models, and deriving actionable insights. Strong knowledge of data visualization tools and techniques is essential for effective communication of results. Qualifications include a Master's or Ph.D. degree in a relevant field, a deep understanding of statistical methods, and hands-on experience in working with real-world datasets. Strong problem-solving skills, adaptability, and the ability to work in a collaborative environment are highly valued."
+    },
+    {
+      "id": 4,
+      "title": "Product Manager",
+      "salary": 4800,
+      "location": "Nakuru",
+      "company": "Apple",
+      "description": "Manage product development lifecycle and drive product strategy.",
+      "type": "full-time",
+      "posted": "5/4/2023",
+      "experience": 4,
+      "skills": "product management, Agile, market research",
+      "details": "Apple is looking for an experienced Product Manager to lead the development of innovative products. The candidate should have a proven track record in product management, from concept to launch. Responsibilities include defining product requirements, conducting market research, and collaborating with cross-functional teams to drive product strategy and development. Strong knowledge of Agile methodologies and the ability to prioritize features based on customer needs and business goals are essential. The candidate should have at least 3+ years of experience in product management, excellent project management skills, and the ability to thrive in a fast-paced, dynamic environment."
+    }
+  ],
   "faq": [
     {
       "id": 2011,

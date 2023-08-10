@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io"
 
 function Faq() {
   const { faqData } = useContext(dataContext)
-  console.log(faqData)
+  // console.log(faqData)
 
   const [open, setOpen] = React.useState(0);
  
