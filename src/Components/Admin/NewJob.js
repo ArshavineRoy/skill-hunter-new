@@ -11,7 +11,6 @@ function NewJob({ jobs, jobId }) {
     setIsShowMore(!isShowMore);
   };
 
-
   if (postJob) {
     return (
       <main
@@ -19,6 +18,14 @@ function NewJob({ jobs, jobId }) {
         role="main"
         className="w-full max-w-md mx-auto p-1 -mt-1"
       >
+        <button
+          onClick={() => {
+            setPostJob(false);
+          }}
+          className="py-2.5 mb-3 px-3 w-32 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-red-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+        >
+          Close
+        </button>
         <div className="bg-white rounded-xl border dark:bg-gray-800 dark:border-gray-700">
           <div className="p-4 sm:p-7">
             <div className="text-center">
